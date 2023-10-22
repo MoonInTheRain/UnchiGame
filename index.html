@@ -6,7 +6,9 @@
     <title>Unity WebGL Player | UnchiGame</title>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" style="width: 95%; height: 95%; border:0; background: #231F20"></canvas>
+    <div id="unity-container" style="position: absolute; width: 100%; height: 100%">
+      <canvas id="unity-canvas" width=540 height=960 style="width: 100%; height: 100%"></canvas>
+    </div>
     <script src="Build/Build.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
